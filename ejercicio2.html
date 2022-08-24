@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo</title>
+    <style>
+        body{background-color: red;}
+        h1{
+            background-color: blue;
+            color: white;text-decoration:none;
+            margin: 10%;
+            width: 300px;
+            height: 300px;
+            font-size: 100px;
+            text-align: center;
+            flex-direction: center
+            ;
+            
+        }
+    
+        .container1{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start; 
+        }
+        .container2{
+            display: flex;
+            flex-direction:separate row;
+            justify-content: flex-start; 
+        }
+        @media (min-width:600px) {
+        body{
+            flex-wrap: nowrap;
+        }    
+        div{
+            flex-basis: 100%;
+        }
+        }
+            
+    </style>
+    
+</head>
+<body>
+
+    <div class="container1">
+        <div> 
+            <h1>1</h1>
+        </div>
+        <div> 
+            <h1>2</h1>
+        </div>
+        <div> 
+            <h1>3</h1>
+        </div>
+        <div> 
+            <h1>4</h1>
+        </div>
+    </div>
+    <div class="container2">
+        <div>
+            <h1>5</h1>
+        </div>
+        <div>
+            <h1>6</h1>
+        </div>
+        <div>
+            <h1>7</h1>
+        </div>
+    </div>
+
+</body>
+</html>
